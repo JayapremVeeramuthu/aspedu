@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ASPEDU Premium Design System
+   Brand: Professional, Trustworthy, Government-recognized
+   Inspired by: Coursera, Simplilearn, UpGrad
+*/
+
+@layer base {
+  :root {
+    /* Primary - Deep Indigo (Trust & Education) */
+    --primary: 222 47% 20%;
+    --primary-foreground: 210 40% 98%;
+    
+    /* Background - Clean White */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    
+    /* Card - Soft Off-white */
+    --card: 210 40% 99%;
+    --card-foreground: 222 47% 11%;
+    
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    
+    /* Secondary - Light Gray */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 222 47% 20%;
+    
+    /* Muted */
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    /* Accent - Emerald Green (CTAs only) */
+    --accent: 160 84% 39%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    
+    /* Borders */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 47% 20%;
+    
+    /* Radius - Rounded cards */
+    --radius: 0.75rem;
+    
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 222 47% 20%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 20% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 222 47% 20%;
+
+    /* Custom tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(222 47% 20%) 0%, hsl(222 60% 30%) 100%);
+    --card-shadow: 0 4px 24px -4px hsl(222 47% 20% / 0.08);
+    --card-shadow-hover: 0 8px 32px -4px hsl(222 47% 20% / 0.12);
+    --trust-badge-bg: 210 40% 97%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 160 84% 39%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 212 27% 84%;
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 160 84% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "cv11", "ss01";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight text-foreground;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-semibold;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+
+  p {
+    @apply text-muted-foreground leading-relaxed;
+  }
+}
+
+@layer components {
+  /* Premium Card */
+  .premium-card {
+    @apply bg-card rounded-2xl p-6 transition-all duration-300 ease-out;
+    box-shadow: var(--card-shadow);
+  }
+
+  .premium-card:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-2px);
+  }
+
+  /* Trust Badge */
+  .trust-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium;
+    background: hsl(var(--trust-badge-bg));
+    color: hsl(var(--primary));
+  }
+
+  /* Section Spacing */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(222 47% 20%) 0%, hsl(222 60% 35%) 100%);
+  }
+
+  /* CTA Button Accent */
+  .btn-accent {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-white transition-all duration-200;
+    background: hsl(var(--accent));
+  }
+
+  .btn-accent:hover {
+    background: hsl(160 84% 34%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px hsl(160 84% 39% / 0.3);
+  }
+
+  /* Primary Button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-primary-foreground transition-all duration-200;
+    background: hsl(var(--primary));
+  }
+
+  .btn-primary:hover {
+    background: hsl(222 47% 25%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px hsl(222 47% 20% / 0.3);
+  }
+
+  /* Ghost Button */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold transition-all duration-200;
+    background: transparent;
+    border: 2px solid hsl(var(--border));
+    color: hsl(var(--foreground));
+  }
+
+  .btn-ghost:hover {
+    background: hsl(var(--secondary));
+    border-color: hsl(var(--primary));
+  }
+
+  /* Input Field */
+  .input-premium {
+    @apply w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground transition-all duration-200;
+  }
+
+  .input-premium:focus {
+    @apply outline-none border-primary ring-4 ring-primary/10;
+  }
+
+  .input-premium::placeholder {
+    @apply text-muted-foreground;
+  }
+
+  /* Navigation Link */
+  .nav-link {
+    @apply text-muted-foreground hover:text-foreground font-medium transition-colors duration-200;
+  }
+
+  .nav-link-active {
+    @apply text-foreground font-semibold;
+  }
+}
+
+@layer utilities {
+  /* Animation Delays */
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+}
