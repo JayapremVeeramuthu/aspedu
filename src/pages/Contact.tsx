@@ -58,9 +58,9 @@ const Contact = () => {
       icon: Phone,
       title: "Call Us",
       details: [
-        "+91 91508 09001",
+        
         "+91 90030 28001",
-        "+91 84388 58636"
+        
       ]
     },
     {
@@ -68,7 +68,7 @@ const Contact = () => {
       title: "Email Us",
       details: [
         "aspcomputereducation@gmail.com",
-        "data.madtec@gmail.com"
+      
       ]
     },
     {
@@ -76,7 +76,7 @@ const Contact = () => {
       title: "Working Hours",
       details: [
         "Monday - Saturday",
-        "9:00 AM - 7:00 PM",
+        "9:00 AM - 9:00 PM",
         "Sunday: Closed"
       ]
     }

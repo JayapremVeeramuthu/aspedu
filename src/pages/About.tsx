@@ -57,19 +57,6 @@ const About = () => {
  return (
   <Layout>
 
-    <SEO
-      title="About ASPEDU | ASP Computer Education in Kallal – Ajith Alagarsamy"
-      description="ASP Computer Education (ASPEDU) is a government-recognized computer training institute in Kallal, Tamil Nadu, founded by Ajith Alagarsamy."
-      keywords="
-        aspedu,
-        asp computer education,
-        aspedu kallal,
-        ajithalagarsamy,
-        ajith alagarsamy aspedu,
-        computer institute in kallal
-      "
-    />
-
     {/* Hero */}
     <section className="bg-gradient-to-b from-secondary/50 to-background pt-12 pb-8">
 
