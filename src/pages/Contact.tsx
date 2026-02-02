@@ -60,6 +60,8 @@ const Contact = () => {
       details: [
         
         "+91 90030 28001",
+        "+91 91508 09001",
+        "+91 84388 58636"
         
       ]
     },
@@ -75,9 +77,9 @@ const Contact = () => {
       icon: Clock,
       title: "Working Hours",
       details: [
-        "Monday - Saturday",
+        "Monday - Sunday",
         "9:00 AM - 9:00 PM",
-        "Sunday: Closed"
+        
       ]
     }
   ];
@@ -268,19 +270,19 @@ const Contact = () => {
 
             {/* Map */}
             <AnimatedSection delay={0.1}>
-              <div className="premium-card h-full min-h-[400px] p-0 overflow-hidden">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.5!2d79.14!3d10.27!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDE2JzEyLjAiTiA3OcKwMDgnMjQuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0, minHeight: "400px" }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="ASPEDU Location"
-                  className="rounded-2xl"
-                />
-              </div>
+               <div className="premium-card h-full min-h-[400px] p-0 overflow-hidden">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.361737547282!2d78.66753779999999!3d9.9869481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b005f765f5b8497%3A0xfab9633eba15091b!2sASP%20COMPUTER%20EDUCATION!5e0!3m2!1sen!2sin!4v1770042841186!5m2!1sen!2sin"
+      width="100%"
+      height="100%"
+      style={{ border: 0, minHeight: "400px" }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="ASP Computer Education Location"
+      className="rounded-2xl"
+    />
+  </div>
             </AnimatedSection>
           </div>
         </div>
