@@ -1,102 +1,126 @@
 import { Course } from "@/components/CourseCard";
-
 export const courses: Course[] = [
   {
     id: "dca",
     title: "DCA - Diploma in Computer Applications",
-    description: "Comprehensive diploma covering MS Office, Internet basics, typing, and essential computer skills for beginners.",
+    description:
+      "Comprehensive diploma covering MS Office, Internet basics, typing, and essential computer skills for beginners.",
     duration: "6 Months",
     mode: "Both",
-    category: "Diploma"
+    category: "Diploma",
+    image: "/courses/DCA.jpeg",
   },
   {
     id: "tally-prime",
     title: "Tally Prime with GST",
-    description: "Master accounting software with GST compliance, inventory management, and financial reporting.",
+    description:
+      "Master accounting software with GST compliance, inventory management, and financial reporting.",
     duration: "3 Months",
     mode: "Both",
-    category: "Accounting"
+    category: "Accounting",
+    image: "/courses/TALLY PRIME.jpeg",
   },
   {
     id: "python",
     title: "Python Programming",
-    description: "Learn Python from basics to advanced concepts including data structures, OOP, and real-world projects.",
+    description:
+      "Learn Python from basics to advanced concepts including data structures, OOP, and real-world projects.",
     duration: "4 Months",
     mode: "Both",
-    category: "Programming"
+    category: "Programming",
+    image: "/courses/PYTHON1.png",
   },
   {
     id: "web-development",
     title: "Full Stack Web Development",
-    description: "Complete web development course covering HTML, CSS, JavaScript, React, Node.js, and databases.",
+    description:
+      "Complete web development course covering HTML, CSS, JavaScript, React, Node.js, and databases.",
     duration: "6 Months",
     mode: "Both",
-    category: "Programming"
+    category: "Programming",
+    image: "/courses/webdevelop.jpg",
   },
   {
     id: "autocad",
     title: "AutoCAD 2D & 3D",
-    description: "Industry-standard CAD software training for architectural, mechanical, and civil engineering drawings.",
+    description:
+      "Industry-standard CAD software training for architectural, mechanical, and civil engineering drawings.",
     duration: "3 Months",
     mode: "Offline",
-    category: "Design"
+    category: "Design",
+    image: "/courses/Auto-CAD.jpeg",
   },
   {
     id: "java",
     title: "Core Java & Advanced Java",
-    description: "Complete Java programming from core concepts to advanced frameworks like Spring and Hibernate.",
+    description:
+      "Complete Java programming from core concepts to advanced frameworks like Spring and Hibernate.",
     duration: "5 Months",
     mode: "Both",
-    category: "Programming"
+    category: "Programming",
+    image: "/courses/Java-Programming.jpeg",
   },
   {
     id: "bcc",
     title: "BCC - Basic Computer Course",
-    description: "Foundation course covering computer fundamentals, MS Office, and internet for absolute beginners.",
+    description:
+      "Foundation course covering computer fundamentals, MS Office, and internet for absolute beginners.",
     duration: "2 Months",
     mode: "Both",
-    category: "Basic"
+    category: "Basic",
+    image: "/courses/bcc.png",
   },
   {
     id: "ui-ux-design",
     title: "UI/UX Design",
-    description: "Learn user interface and experience design principles using Figma, Adobe XD, and industry best practices.",
+    description:
+      "Learn user interface and experience design principles using Figma, Adobe XD, and industry best practices.",
     duration: "4 Months",
     mode: "Both",
-    category: "Design"
+    category: "Design",
+    image: "/courses/uiux.jpg",
   },
   {
     id: "cyber-security",
     title: "Cyber Security & Ethical Hacking",
-    description: "Comprehensive security training covering network security, penetration testing, and ethical hacking.",
+    description:
+      "Comprehensive security training covering network security, penetration testing, and ethical hacking.",
     duration: "6 Months",
     mode: "Both",
-    category: "Security"
+    category: "Security",
+    image: "/courses/cybersecurity.jpg",
   },
   {
     id: "solidworks",
     title: "SolidWorks 3D CAD",
-    description: "Professional 3D CAD software for mechanical design, simulation, and product development.",
+    description:
+      "Professional 3D CAD software for mechanical design, simulation, and product development.",
     duration: "4 Months",
     mode: "Offline",
-    category: "Design"
+    category: "Design",
+    image: "/courses/solidworks.jpg",
   },
   {
     id: "dtp",
     title: "DTP - Desktop Publishing",
-    description: "Master Photoshop, Illustrator, InDesign, and CorelDraw for professional graphic design work.",
+    description:
+      "Master Photoshop, Illustrator, InDesign, and CorelDraw for professional graphic design work.",
     duration: "3 Months",
     mode: "Both",
-    category: "Design"
+    category: "Design",
+    image: "/courses/dtp.jpg",
   },
   {
     id: "php-mysql",
     title: "PHP & MySQL",
-    description: "Server-side web development with PHP and MySQL database management for dynamic websites.",
+    description:
+      "Server-side web development with PHP and MySQL database management for dynamic websites.",
     duration: "4 Months",
     mode: "Both",
-    category: "Programming"
-  }
+    category: "Programming",
+    image: "/courses/php.png",
+  },
+
 ];
 
 export const categories = ["All", "Diploma", "Programming", "Accounting", "Design", "Security", "Basic"];

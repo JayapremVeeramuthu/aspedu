@@ -89,7 +89,7 @@ const Courses = () => {
               <p className="text-muted-foreground text-lg mb-4">
                 No courses found matching your criteria.
               </p>
-              <button
+              <button 
                 onClick={() => {
                   setSelectedCategory("All");
                   setSearchQuery("");
