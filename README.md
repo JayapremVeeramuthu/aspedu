@@ -97,7 +97,7 @@ Courses are available in **Online and Offline modes**.
 **Jayaprem V**  
 UI/UX Designer & Frontend Developer  
 
-🔗 Portfolio: https://your-portfolio-link.com  
+🔗 Portfolio: https://jayapremvportfolio.vercel.app/
 
 > This project was designed and developed with a strong focus on usability, accessibility, and professional EdTech standards.
 
