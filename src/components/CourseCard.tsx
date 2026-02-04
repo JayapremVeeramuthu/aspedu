@@ -46,7 +46,7 @@ const getImageSource = (course: Course): string => {
     .split("")
     .reduce((acc, char) => acc + char.charCodeAt(0), 0);
   const imageIndex = hash % images.length;
-  
+
   const imagePath = `/courses/${images[imageIndex]}`;
   return imagePath;
 };
