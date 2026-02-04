@@ -24,7 +24,7 @@ const Index = () => {
     { icon: Shield, label: "ISO 9001:2015 Certified" },
     { icon: Award, label: "MSME Registered" },
     { icon: Building, label: "Govt. Recognized" },
-    { icon: Globe, label: "AICTE Approved" },
+    // { icon: Globe, label: "AICTE Approved" },
   ];
 
   const features = [

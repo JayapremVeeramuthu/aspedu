@@ -51,7 +51,7 @@ const About = () => {
     { label: "MSME Registered", description: "Ministry of MSME, Govt. of India" },
     { label: "DPIIT Recognized", description: "Startup India Recognition" },
     { label: "MCA Registered", description: "Ministry of Corporate Affairs" },
-    { label: "AICTE Approved", description: "Internship Recognition" },
+    // { label: "AICTE Approved", description: "Internship Recognition" },
   ];
 
  return (

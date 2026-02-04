@@ -78,7 +78,7 @@ export const courses: Course[] = [
     duration: "4 Months",
     mode: "Both",
     category: "Design",
-    image: "/courses/uiux.jpg",
+    image: "/courses/uiux.jpeg",
   },
   {
     id: "cyber-security",
